@@ -1,0 +1,26 @@
+<article>
+    <header>
+      <h2><%= @event.title %></h2>
+    </header>
+    <p>
+      <%= @event.description %>
+    </p>
+    <table>
+      <tr>
+        <th>Date:</th>
+        <td><%= @event.date %></td>
+      </tr>
+      <tr>
+        <th>Time:</th>
+        <td><%= @event.time %></td>
+      </tr>
+      <tr>
+        <th>Fee:</th>
+        <td><%= number_to_currency(@event.fee) %></td>
+      </tr>
+    </table>
+  </article>
+  <nav>
+  <%= link_to "All Events", event_path %> |
+  <%= link_to "Edit", edit_event_path(@event) %>
+</nav>
