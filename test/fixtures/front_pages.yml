@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  calendar: MyString
+  officer_id: 1
+  sponsor_id: 1
+  currentEvent_id: 1
+
+two:
+  calendar: MyString
+  officer_id: 1
+  sponsor_id: 1
+  currentEvent_id: 1

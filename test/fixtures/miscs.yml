@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fbLink: MyString
+  instagramLink: MyString
+  contactEmail: MyString
+
+two:
+  fbLink: MyString
+  instagramLink: MyString
+  contactEmail: MyString
