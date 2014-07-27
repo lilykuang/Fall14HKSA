@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140727232408) do
+ActiveRecord::Schema.define(version: 20140727232858) do
 
   create_table "editors", force: true do |t|
     t.string   "email"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20140727232408) do
     t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "flyer"
   end
 
   create_table "front_pages", force: true do |t|
