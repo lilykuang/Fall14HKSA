@@ -11,13 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140730232448) do
+ActiveRecord::Schema.define(version: 20140731203315) do
 
   create_table "editors", force: true do |t|
     t.string   "email"
     t.boolean  "isAdmin"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "password"
+    t.string   "name"
   end
 
   create_table "event_pages", force: true do |t|
@@ -36,7 +38,6 @@ ActiveRecord::Schema.define(version: 20140730232448) do
     t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.binary   "flyer"
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"

@@ -19,7 +19,6 @@ class EventsController < ApplicationController
 
   def new
     @event = Event.new
-    @event.avatar.build
   end
 
   def create

@@ -40,3 +40,4 @@ gem 'spring',        group: :development
 
 #For Picture
 gem "paperclip", "~> 3.5.3"
+gem 'bcrypt-ruby', '3.1.2'
