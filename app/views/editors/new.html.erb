@@ -1,0 +1,20 @@
+<% provide(:title, 'Sign up') %>
+<h1>Sign up</h1>
+
+<div>
+  <div>
+    <%= form_for @editor do |f| %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.submit "Create my account" %>
+    <% end %>
+  </div>
+</div>
