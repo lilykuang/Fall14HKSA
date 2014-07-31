@@ -1,5 +1,5 @@
-<h1>Editing Event: <%= @event.title %></h1>
-<%= form_for @event, :html => {:multipart => true} do |f| %>
+<h1>Add New Event</h1>
+<%= form_for @event :html => {:multipart => true} do |f| %>
   <p>
     <%= f.label :title %><br/>
     <%= f.text_field :title %>
@@ -25,12 +25,11 @@
     <%= f.number_field :fee %>
   </p>
   <p>
-    <%= f.label :flyer %>
-    <%= f.fields_for :avatar do |fp| %>
+  <%= f.label :flyer %>
+  <%= f.fields_for :avatar do |fp| %>
     <%= fp.file_field :image %>
     <%= fp.check_box :_destroy %>
     <%= fp.label :_destroy, "Remove Image" %> 
-    <% end %>
   </p>
   <p>
     <%= f.submit %>

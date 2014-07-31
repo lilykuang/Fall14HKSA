@@ -7,20 +7,34 @@
     </p>
     <table>
       <tr>
-        <th>Date:</th>
-        <td><%= @event.date %></td>
+        <tr>
+        <th>Location:</th>
+        <td> <%= @event.location %></td>
+      </tr>
+      <th>Date:</th>
+        <% if @event.date %>
+        <td><%= @event.date.strftime("%m/%d/%y") %></td>
+        <% end %>
       </tr>
       <tr>
         <th>Time:</th>
-        <td><%= @event.time %></td>
+        <% if @event.time %>
+        <td><%= @event.time.strftime("%I:%M") %></td>
+        <% end %>
       </tr>
+       
       <tr>
         <th>Fee:</th>
         <td><%= number_to_currency(@event.fee) %></td>
       </tr>
+      <tr>
+        <th>Flyer: </th>
+        <td><%= image_tag(@event.avatar.url) %></td>
+      </tr>
+
     </table>
   </article>
   <nav>
-  <%= link_to "All Events", event_path %> |
+  <%= link_to "All Events", events_path %> |
   <%= link_to "Edit", edit_event_path(@event) %>
 </nav>
