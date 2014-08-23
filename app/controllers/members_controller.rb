@@ -8,19 +8,19 @@ class MembersController < ApplicationController
     @member = Member.new(member_params)
     if @member.save
       flash[:success] = "Welcome to HKSA!"
-      redirect_to root 
+      redirect_to root_path
     else
       render 'new'
     end
   end
 
   def index 
-    @member = Member.all
+    @members = Member.all
   end
 
   private
 
     def member_params
-      params.require(:member).permit(:firstName, :lastName, :email)
+      params.require(:member).permit(:name, :email)
     end
 end
