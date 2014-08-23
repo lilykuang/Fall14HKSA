@@ -1,0 +1,23 @@
+<h1>Welcome to HKSA</h1>
+<li><%= link_to 'Sign up', signup_path %></li>
+<li><%= link_to 'Sign in', signin_path %></li>
+<li><%= link_to 'Events', events_path %></li>
+
+<h2>Subscribe us</h2>
+<div>
+  <div>
+    <%= form_for(@member) do |f| %>
+
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name %>
+
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.submit "Save changes" %>
+    <% end %>
+  </div>
+</div>
