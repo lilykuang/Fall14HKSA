@@ -20050,3 +20050,67 @@ ActionView::Template::Error (First argument in form cannot contain nil or be emp
   Rendered /home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
   Rendered /home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
   Rendered /home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 12:58:08 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FrontPagesController#index as HTML
+  Rendered front_pages/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 65ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     6: <h2>Subscribe us</h2>
+     7: <div>
+     8:   <div>
+     9:     <%= form_for(@member) do |f| %>
+    10: 
+    11:       <%= f.label :first_name %>
+    12:       <%= f.text_field :first_name %>
+  app/views/front_pages/index.html.erb:9:in `_app_views_front_pages_index_html_erb___828269711_93865860'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 12:59:32 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered front_pages/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     6: <h2>Subscribe us</h2>
+     7: <div>
+     8:   <div>
+     9:     <%= form_for(@member) do |f| %>
+    10: 
+    11:       <%= f.label :first_name %>
+    12:       <%= f.text_field :first_name %>
+  app/views/front_pages/index.html.erb:9:in `_app_views_front_pages_index_html_erb___828269711_93865860'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (46.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 12:59:34 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered front_pages/index.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     6: <h2>Subscribe us</h2>
+     7: <div>
+     8:   <div>
+     9:     <%= form_for(@member) do |f| %>
+    10: 
+    11:       <%= f.label :first_name %>
+    12:       <%= f.text_field :first_name %>
+  app/views/front_pages/index.html.erb:9:in `_app_views_front_pages_index_html_erb___828269711_93865860'
+
+
+  Rendered /home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.1ms)

@@ -7,4 +7,5 @@ class FrontPagesController < ApplicationController
   def about 
     
   end
+  
 end
