@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140822074730) do
+ActiveRecord::Schema.define(version: 20140823211632) do
 
   create_table "event_pages", force: true do |t|
     t.integer  "pastEvent_id"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20140822074730) do
 
   create_table "members", force: true do |t|
     t.string   "email"
-    t.string   "fistName"
+    t.string   "firstName"
     t.string   "lastName"
     t.datetime "created_at"
     t.datetime "updated_at"
