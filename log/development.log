@@ -20057,3 +20057,1952 @@ ActionView::Template::Error (First argument in form cannot contain nil or be emp
   Rendered /home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
   Rendered /home/saasbook/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.5ms)
 >>>>>>> 0636643a27889253c7af90697bf421ec45f88780
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:01:48 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FrontPagesController#index as HTML
+  Rendered front_pages/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 19ms
+
+SyntaxError (/home/luisingho/HKSAWebsite/Fall14HKSA/app/views/front_pages/index.html.erb:3: syntax error, unexpected '<', expecting ')'
+<h1>Welcome to HKSA</h1>
+ ^
+/home/luisingho/HKSAWebsite/Fall14HKSA/app/views/front_pages/index.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+<h1>Welcome to HKSA</h1>
+              ^
+/home/luisingho/HKSAWebsite/Fall14HKSA/app/views/front_pages/index.html.erb:4: unknown regexp option - l
+unmatched close parenthesis: /h1>
+<li><%= link_to 'Sign up', signup_path );@output_buffer.safe_append='</i
+/home/luisingho/HKSAWebsite/Fall14HKSA/app/views/front_pages/index.html.erb:5: syntax error, unexpected '<'
+<li>'.freeze;@output_buffer.ap...
+ ^
+/home/luisingho/HKSAWebsite/Fall14HKSA/app/views/front_pages/index.html.erb:5: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append=( link_to 'Sign in', signin_path );@output_b...
+...                               ^
+/home/luisingho/HKSAWebsite/Fall14HKSA/app/views/front_pages/index.html.erb:6: unknown regexp option - l
+/home/luisingho/HKSAWebsite/Fall14HKSA/app/views/front_pages/index.html.erb:8: syntax error, unexpected '<'
+<!--- <h2>Subscribe us</h2>
+ ^
+/home/luisingho/HKSAWebsite/Fall14HKSA/app/views/front_pages/index.html.erb:8: syntax error, unexpected '<'
+<!--- <h2>Subscribe us</h2>
+       ^
+/home/luisingho/HKSAWebsite/Fall14HKSA/app/views/front_pages/index.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+<!--- <h2>Subscribe us</h2>
+                      ^
+/home/luisingho/HKSAWebsite/Fall14HKSA/app/views/front_pages/index.html.erb:24: unknown regexp options - dv
+/home/luisingho/HKSAWebsite/Fall14HKSA/app/views/front_pages/index.html.erb:25: syntax error, unexpected '<'
+</div>
+ ^
+/home/luisingho/HKSAWebsite/Fall14HKSA/app/views/front_pages/index.html.erb:25: unterminated regexp meets end of file):
+  app/views/front_pages/index.html.erb:3: syntax error, unexpected '<', expecting ')'
+  app/views/front_pages/index.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/front_pages/index.html.erb:4: unknown regexp option - l
+  app/views/front_pages/index.html.erb:5: syntax error, unexpected '<'
+  app/views/front_pages/index.html.erb:5: syntax error, unexpected tCONSTANT, expecting ')'
+  app/views/front_pages/index.html.erb:6: unknown regexp option - l
+  app/views/front_pages/index.html.erb:8: syntax error, unexpected '<'
+  app/views/front_pages/index.html.erb:8: syntax error, unexpected '<'
+  app/views/front_pages/index.html.erb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/front_pages/index.html.erb:24: unknown regexp options - dv
+  app/views/front_pages/index.html.erb:25: syntax error, unexpected '<'
+  app/views/front_pages/index.html.erb:25: unterminated regexp meets end of file
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:02:15 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FrontPagesController#index as HTML
+  Rendered front_pages/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+     8: <!--- <h2>Subscribe us</h2>
+     9: <div>
+    10:   <div>
+    11:     <%= form_for(@member) do |f| %>
+    12: 
+    13:       <%= f.label :first_name %>
+    14:       <%= f.text_field :first_name %>
+  app/views/front_pages/index.html.erb:11:in `_app_views_front_pages_index_html_erb___929578416866577014_44148220'
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:02:35 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered front_pages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 324ms (Views: 323.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 13:02:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 13:02:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 13:02:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 13:02:36 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 13:02:36 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 13:02:36 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 13:02:36 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 13:02:36 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 13:02:36 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 13:02:36 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 13:02:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 13:02:36 -0700
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-08-23 13:02:55 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 41ms (Views: 31.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-08-23 13:03:08 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-08-23 13:03:11 -0700
+Processing by EventsController#index as HTML
+DEPRECATION WARNING: String based terminators are deprecated, please use a lambda. (called from <class:Event> at /home/luisingho/HKSAWebsite/Fall14HKSA/app/models/event.rb:2)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "events"
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 23ms (Views: 19.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2014-08-23 13:04:09 -0700
+Processing by EventsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "events"
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 13:04:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 13:04:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 13:04:09 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 13:04:09 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 13:04:09 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 13:04:09 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 13:04:09 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 13:04:09 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 13:04:09 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 13:04:09 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 13:04:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 13:04:09 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:04:10 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered front_pages/index.html.erb within layouts/application (33.8ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (Missing partial front_pages/_header, application/_header with {:locale=>[:en], :formats=>[:html, :xml], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/luisingho/HKSAWebsite/Fall14HKSA/app/views"
+):
+    1: <%= render 'header'%>
+    2: 
+    3: <h1>Welcome to HKSA</h1>
+    4: <li><%= link_to 'Sign up', signup_path %></li>
+  app/views/front_pages/index.html.erb:1:in `_app_views_front_pages_index_html_erb___929578416866577014_20484340'
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:04:11 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered front_pages/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (Missing partial front_pages/_header, application/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/luisingho/HKSAWebsite/Fall14HKSA/app/views"
+):
+    1: <%= render 'header'%>
+    2: 
+    3: <h1>Welcome to HKSA</h1>
+    4: <li><%= link_to 'Sign up', signup_path %></li>
+  app/views/front_pages/index.html.erb:1:in `_app_views_front_pages_index_html_erb___929578416866577014_49904440'
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:04:24 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered front_pages/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (Missing partial front_pages/_header.html, application/_header.html with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/luisingho/HKSAWebsite/Fall14HKSA/app/views"
+):
+    1: <%= render 'header.html'%>
+    2: 
+    3: <h1>Welcome to HKSA</h1>
+    4: <li><%= link_to 'Sign up', signup_path %></li>
+  app/views/front_pages/index.html.erb:1:in `_app_views_front_pages_index_html_erb___929578416866577014_48030980'
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:07:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FrontPagesController#index as HTML
+  Rendered front_pages/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (Missing partial front_pages/_header, application/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/luisingho/HKSAWebsite/Fall14HKSA/app/views"
+):
+    1: <%= render 'header'%>
+    2: 
+    3: <h1>Welcome to HKSA</h1>
+    4: <li><%= link_to 'Sign up', signup_path %></li>
+  app/views/front_pages/index.html.erb:1:in `_app_views_front_pages_index_html_erb__2492636072846284243_33844220'
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:25:49 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.3ms)
+  Rendered front_pages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 45ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 13:25:49 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 13:25:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 13:25:49 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 13:25:49 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 13:25:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 13:25:49 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 13:25:49 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 13:25:49 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 13:25:49 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 13:25:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 13:25:49 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 13:25:49 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:26:47 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.3ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 13:26:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 13:26:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 13:26:47 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 13:26:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 13:26:47 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 13:26:47 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 13:26:47 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 13:26:47 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 13:26:47 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 13:26:47 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 13:26:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 13:26:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:30:13 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.5ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 13:30:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 13:30:13 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 13:30:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 13:30:13 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 13:30:13 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 13:30:13 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 13:30:13 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 13:30:13 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 13:30:13 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 13:30:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 13:30:13 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 13:30:13 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:35:47 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered front_pages/index.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( bootstrap.css )` to `config/initializers/assets.rb` and restart your server):
+    1: <%= stylesheet_link_tag 'bootstrap' %>
+    2: <%= render 'shared/header'%>
+    3: 
+    4: <h1>Welcome to HKSA</h1>
+  app/views/front_pages/index.html.erb:1:in `_app_views_front_pages_index_html_erb__2492636072846284243_26156580'
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:36:23 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered front_pages/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 13:36:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 13:36:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 13:36:23 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 13:36:23 -0700
+
+
+Started GET "/stylesheets/stylesheets/bootstrap.min.css" for 127.0.0.1 at 2014-08-23 13:36:23 -0700
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/stylesheets/bootstrap.min.css"):
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.5ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.8ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 13:36:23 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 13:36:23 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 13:36:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 13:36:23 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 13:36:23 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 13:36:23 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 13:36:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 13:36:23 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:39:40 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered front_pages/index.html.erb within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( bootstrap.min.css )` to `config/initializers/assets.rb` and restart your server):
+    1: <%= stylesheet_link_tag 'bootstrap.min' %>
+    2: <%= render 'shared/header'%>
+    3: 
+    4: <h1>Welcome to HKSA</h1>
+  app/views/front_pages/index.html.erb:1:in `_app_views_front_pages_index_html_erb__2492636072846284243_36534960'
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:40:32 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 13:40:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 13:40:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 13:40:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 13:40:32 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 13:40:32 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 13:40:32 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 13:40:32 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 13:40:32 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 13:40:32 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 13:40:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 13:40:32 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 13:40:32 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:46:40 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered front_pages/index.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `stylesheet_include_tag' for #<#<Class:0x000000040ef200>:0x00000003529678>):
+    1: <%= stylesheet_include_tag 'application' %>
+    2: 
+    3: <%= render 'shared/header'%>
+    4: 
+  app/views/front_pages/index.html.erb:1:in `_app_views_front_pages_index_html_erb__2492636072846284243_27866760'
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:47:13 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FrontPagesController#index as HTML
+  Rendered front_pages/index.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined method `stylesheet_include_tag' for #<#<Class:0x00000003ba7dd8>:0x00000003ba72e8>):
+    1: <%= stylesheet_include_tag 'application' %>
+    2: 
+    3: <%= render 'shared/header'%>
+    4: 
+  app/views/front_pages/index.html.erb:1:in `_app_views_front_pages_index_html_erb__4508859325848686920_31037120'
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:48:17 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.3ms)
+  Rendered front_pages/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 13:48:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 13:48:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 13:48:18 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 13:48:18 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 13:48:18 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 13:48:18 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 13:48:18 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 13:48:18 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 13:48:18 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 13:48:18 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 13:48:18 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 13:48:18 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:57:51 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered front_pages/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 13:57:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 13:57:51 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 13:57:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 13:57:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 13:57:51 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 13:57:51 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 13:57:51 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 13:57:51 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 13:57:51 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 13:57:51 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 13:57:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 13:57:51 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 13:58:40 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.3ms)
+  Rendered front_pages/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 54ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 13:58:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 13:58:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 13:58:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 13:58:40 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 13:58:40 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 13:58:40 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 13:58:40 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 13:58:40 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 13:58:40 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 13:58:40 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 13:58:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 13:58:40 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:01:03 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:01:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:03 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:03 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:03 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:03 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:03 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:03 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:03 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:03 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:03 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.4ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:04 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered front_pages/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered front_pages/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:05 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:01:06 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:03:40 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:03:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:40 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:40 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:40 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:40 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:40 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:40 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:40 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:40 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:03:41 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:41 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:03:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:41 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:41 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:41 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:41 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:41 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:41 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:41 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:41 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:03:42 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:04:07 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered front_pages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:04:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:04:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:04:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:04:07 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:04:07 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:04:07 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:04:07 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:04:07 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:04:07 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:04:07 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:04:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:04:07 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/editors.css?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/front_pages.css?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2014-08-23 14:07:15 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.1ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered front_pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/editors.css?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/front_pages.css?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/navbar.css?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2014-08-23 14:10:06 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.3ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/editors.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/front_pages.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/navbar.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2014-08-23 14:11:15 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.9ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.0ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/editors.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/front_pages.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/navbar.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2014-08-23 14:11:24 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered front_pages/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/front_pages.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/editors.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/navbar.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/editors.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/front_pages.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+
+Started GET "/assets/bootstrap.css.map" for 127.0.0.1 at 2014-08-23 14:11:36 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.3) lib/rails/engine.rb:514:in `call'
+  railties (4.1.3) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/luisingho/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-23 14:26:49 -0700
+Processing by FrontPagesController#index as HTML
+  Rendered shared/_header.html.erb (0.1ms)
+  Rendered front_pages/index.html.erb within layouts/application (18.1ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (No route matches {:action=>"subscribe", :controller=>"members"}):
+    16:         </a>
+    17:       </div>
+    18:       <div class="col-md-2">
+    19:         <a href=<%= url_for :controller => 'members', :action => 'subscribe' %> >
+    20:           <%= image_tag("signup-icon") %>
+    21:         </a>
+    22:       </div>
+  app/views/front_pages/index.html.erb:19:in `_app_views_front_pages_index_html_erb___2662068766593872304_41074900'
+
+
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/luisingho/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.1ms)
