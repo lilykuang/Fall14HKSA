@@ -1,7 +1,42 @@
-<h1>Welcome to HKSA</h1>
+<%= render 'shared/header'%>
+
+<<<<<<< HEAD
+<div class="content container">
+  <div id="upcoming-event">
+    <%= image_tag("calender.dsfdsaf") %>
+  </div>
+  <div id="midbar">
+    <div id="hksa-logo">
+      <%= image_tag("hksa-logo.png") %>
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-md-offset-3">
+      <!-- get from DB -->
+        <a href="http://www.facebook.com">
+          <%= image_tag("facebook-icon") %>
+        </a>
+      </div>
+      <div class="col-md-2">
+        <a href=<%= url_for :controller => 'members', :action => 'subscribe' %> >
+          <%= image_tag("signup-icon") %>
+        </a>
+      </div>
+      <div class="col-md-2">
+      <!-- get from DB -->
+        <a href="http://www.instragram.com">
+          <%= image_tag("signup-icon") %>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <li><%= link_to 'Sign up', signup_path %></li>
 <li><%= link_to 'Sign in', signin_path %></li>
 <li><%= link_to 'Events', events_path %></li>
 
+=======
 <h2>Subscribe us</h2>
 <li><%= link_to 'Subscribe', member_signup_path %></li>
+>>>>>>> 242e09bac5ff5a4cd252bc6c5c7515ea3778e1a6
