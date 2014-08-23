@@ -18151,3 +18151,49 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-31 17:40:09
 
 
 Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-07-31 17:40:09 -0700
+  [1m[36m (136.8ms)[0m  [1mCREATE TABLE "event_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "pastEvent_id" integer, "currentEvent_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (106.4ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "fee" decimal, "date" date, "time" time, "location" varchar(255), "created_at" datetime, "updated_at" datetime, "avatar_file_name" varchar(255), "avatar_content_type" varchar(255), "avatar_file_size" integer, "avatar_updated_at" datetime, "flyer" varchar(255)) 
+  [1m[36m (123.6ms)[0m  [1mCREATE TABLE "front_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "calendar" varchar(255), "officer_id" integer, "sponsor_id" integer, "currentEvent_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (123.5ms)[0m  CREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "fistName" varchar(255), "lastName" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (131.7ms)[0m  [1mCREATE TABLE "miscs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fbLink" varchar(255), "instagramLink" varchar(255), "contactEmail" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (132.0ms)[0m  CREATE TABLE "officers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "firstName" varchar(255), "lastName" varchar(255), "year" varchar(255), "position" varchar(255), "major" varchar(255), "description" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (115.2ms)[0m  [1mCREATE TABLE "sponsors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address" varchar(255), "advertisement" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (132.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "password_digest" varchar(255), "remember_token" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (114.8ms)[0m  CREATE  INDEX "index_users_on_remember_token" ON "users" ("remember_token")
+  [1m[36m (130.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (115.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (115.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140731231058')
+  [1m[36m (116.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140731223854')[0m
+  [1m[35m (108.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140727231707')
+  [1m[36m (99.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140731185003')[0m
+  [1m[35m (91.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140727230821')
+  [1m[36m (99.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140731220033')[0m
+  [1m[35m (108.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140727232408')
+  [1m[36m (116.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140727230516')[0m
+  [1m[35m (116.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140731203315')
+  [1m[36m (126.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140731191230')[0m
+  [1m[35m (116.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140727232240')
+  [1m[36m (116.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140727232858')[0m
+  [1m[35m (107.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140723220512')
+  [1m[36m (100.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140727230007')[0m
+  [1m[35m (99.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140727231055')
+  [1m[36m (108.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140731215544')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_remember_token' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-22 01:03:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/luisingho/.rvm/gems/ruby-1.9.3-p547/gems/railties-4.1.3/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 42ms (Views: 27.5ms | ActiveRecord: 0.0ms)
