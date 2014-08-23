@@ -34,7 +34,10 @@
 
     </table>
   </article>
-  <nav>
+
+<nav>
   <%= link_to "All Events", events_path %> |
+  <% if current_user.admin? && !current_user?(user) %>
   <%= link_to "Edit", edit_event_path(@event) %>
+  <% end -%>
 </nav>
