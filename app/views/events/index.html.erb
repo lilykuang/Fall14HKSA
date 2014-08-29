@@ -1,32 +1,44 @@
-<h1><%= pluralize(@events.size, 'Event') %></h1>
-<% if current_user.admin? && !current_user?(user) %>
-<%= link_to "Add New Event", new_event_path %>
-<% end %>
-<% @events.each do |event| %>
-  <article>
-    <header>
-      <h2><%= link_to(event.title, "/events/#{event.id}") %></h2>
-    </header>
-    <p>
-      <%= event.description %>
-    </p>
-    <table>
-      <tr>
-        <th>Date:</th>
-        <td><%= event.date %></td>
-      </tr>
-      <tr>
-        <th>Time:</th>
-        <td><%= event.time %></td>
-      </tr>
-      <tr>
-        <th>Fee:</th>
-        <td><%= number_to_currency(event.fee) %></td>
-      </tr>
-      <tr>
-        <th>Flyer:</th>
-        <td><%= event.avatar.url %></td>
-      </tr>
-    </table>
-  </article>
-<% end %>
+<% render 'shared/header' %>
+
+<ul id="events">
+  <% @events.each do |event| %>
+
+  <!-- TODO : CHECK TO SEE IF EVENT IS CURRENT.  CREATE DIFFERENT CONTAINERS OR SOMETHING TO MARK CURRENT EVENTS -->
+
+  <%= render 'event' |event_portion| do %>
+    <% case event_portion %>
+
+    <% when :flyer %>
+        <%= image_tag('flyer.jpg') %>
+
+    <% when :description %>
+        <h2 title><%= event.title %></h2>
+        <div>
+          <%= event.description %>
+        </div>
+
+    <% when :time %>
+        <h2 title>When</h2>
+        <div>
+          <%= event.date %>
+          <br />
+          <%= event.time %>
+        </div>
+
+    <% when :location %>
+        <h2 title>Where</h2>
+        <div>
+          <%= event.location %>
+        </div>
+
+    <% when :admission %>
+        <h2 title>Admission</h2>
+        <div>
+          <%= event.fee %>
+        </div>
+        
+    <% end %>
+
+  <% end %>
+
+</ul>
