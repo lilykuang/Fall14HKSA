@@ -1,0 +1,28 @@
+<div class="event-info">
+	<div class="row">
+		<div class="event-description col-lg-8 col-md-6 col-sm-12">
+			<div class="event-flyer">
+				** flyer goes here
+				<% yield :flyer %>
+			</div>
+			<div class="event-description">
+				** description goes here
+				<%= yield :description %>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="event-time">
+				** time and date goes here
+				<%= yield :time %>
+			</div>
+			<div class="event-location">
+				** location goes here
+				<% yield :location %>
+			</div>
+			<div class="event-admission">
+				** admission and fees go here
+				<% yield :admission %>
+			</div>
+		</div>
+	</div>
+</div>
