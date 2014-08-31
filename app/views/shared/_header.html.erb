@@ -1,8 +1,31 @@
-<div class="navbar navbar-default">
+<div class="navbar navbar-blue">
 	<div class="container">
-		<a class="navbar-brand" href="#">
-			<div>Hong Kong Student Association</div>
-			<div>香港同學會</div>
-		</a>
+		<div class="navbar-inner">
+		<%= image_tag('hksa_logo.jpg', :height => '100', :width => '100', :class=> 'navbar-brand') %>
+
+		<ul class="nav navbar-nav">
+			<li>
+				<a href="<%= root_path %>">
+					HOME
+					<br />
+					主頁
+				</a>
+			</li>
+			<li>
+				<a href="<%= events_path %>">
+					EVENTS
+					<br />
+					活動
+				</a>
+			</li>
+			<li>
+				<a href="<%= about_path %>">
+					ABOUT
+					<br />
+					關於
+				</a>
+			</li>
+		</ul>
+		</div>
 	</div>
 </div>

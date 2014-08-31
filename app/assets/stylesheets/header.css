@@ -1,0 +1,23 @@
+.navbar-blue
+{
+	background-color: #0099A7;
+	border: none;
+}
+
+.navbar-blue .navbar-brand
+{
+	height: 100px;
+}
+
+.navbar-blue .navbar-nav > li > a
+{
+	height: 100px;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}

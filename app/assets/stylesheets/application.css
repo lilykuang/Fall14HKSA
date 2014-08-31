@@ -2,3 +2,10 @@
 *= require_self
 *= require_tree .
 */
+
+body
+{
+	background-image: url('hk_background.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
