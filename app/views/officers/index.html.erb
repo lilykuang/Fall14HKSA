@@ -1,0 +1,14 @@
+<li><%= link_to 'Home', root_path %>
+</li>
+<li><%= link_to 'Add an Officer', new_officer_path %></li>
+	<% @officer.each do |officer| %>
+        <h3><%= officer.firstName %></h3>
+    	<li><%= officer.lastName %></li>    	
+    	<li><%= officer.year %></li>
+    	<li><%= officer.position %></li>
+    	<li><%= officer.major %></li>
+    	<li><%= officer.description %></li>
+        <%= link_to "delete", officer, method: :delete,
+                                  data: { confirm: "You sure?" } %>
+    
+	<% end %>

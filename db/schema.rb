@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140823211632) do
+ActiveRecord::Schema.define(version: 20140823220214) do
 
   create_table "event_pages", force: true do |t|
     t.integer  "pastEvent_id"
@@ -38,7 +38,6 @@ ActiveRecord::Schema.define(version: 20140823211632) do
 
   create_table "front_pages", force: true do |t|
     t.string   "calendar"
-    t.integer  "officer_id"
     t.integer  "sponsor_id"
     t.integer  "currentEvent_id"
     t.datetime "created_at"
@@ -47,10 +46,9 @@ ActiveRecord::Schema.define(version: 20140823211632) do
 
   create_table "members", force: true do |t|
     t.string   "email"
-    t.string   "firstName"
-    t.string   "lastName"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
   end
 
   create_table "miscs", force: true do |t|

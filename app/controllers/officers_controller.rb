@@ -1,6 +1,28 @@
 class OfficersController < ApplicationController
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  validates :email, presence:   true,
-                    format:     { with: VALID_EMAIL_REGEX },
-                    uniqueness: { case_sensitive: false }
+
+  def new
+    @officer = Officer.new
+  end
+
+  def create
+    @officer = Officer.new(officer_params)
+    if @officer.save
+      redirect_to officers_path
+    else
+      render 'new'
+    end
+  end
+
+  def index 
+    @officer = Officer.all
+  end
+
+  private
+
+    def officer_params
+      params.require(:officer).permit(:firstName, 
+                    :lastName, :year, :position,
+                    :major, :description)
+    end
+  
 end

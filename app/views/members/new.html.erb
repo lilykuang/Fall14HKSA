@@ -1,7 +1,7 @@
 <div>
   <div>
     <%= form_for(@member) do |f| %>
-
+    <%= render 'shared/subscription_error' %>
       <%= f.label :name %>
       <%= f.text_field :name %>
 
