@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   #front_page 
   root 'front_pages#index'
 
+  resource :front_page, only: [:index]
   resources :users
   resources :officers
   resources :events
@@ -15,5 +16,6 @@ Rails.application.routes.draw do
   
   #Subscribe us 
   match '/subscribe', to: 'members#new',          via: 'get'
+  match '/about/',    to: 'front_pages#index',    via: 'get'
 
 end

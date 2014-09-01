@@ -1,44 +1,42 @@
-<% render 'shared/header' %>
-
 <ul id="events">
   <% @events.each do |event| %>
 
   <!-- TODO : CHECK TO SEE IF EVENT IS CURRENT.  CREATE DIFFERENT CONTAINERS OR SOMETHING TO MARK CURRENT EVENTS -->
 
-  <%= render 'event' |event_portion| do %>
-    <% case event_portion %>
+    <%= render 'event' do |event_portion| %>
+      <% case event_portion %>
+      <% when :flyer %>
+          <%= image_tag('flyer.jpg') %>
 
-    <% when :flyer %>
-        <%= image_tag('flyer.jpg') %>
+      <% when :description %>
+          <h2 title><%= event.title %></h2>
+          <div>
+            <%= event.description %>
+          </div>
 
-    <% when :description %>
-        <h2 title><%= event.title %></h2>
-        <div>
-          <%= event.description %>
-        </div>
+      <% when :time %>
+          <h2 title>When</h2>
+          <div>
+            <%= event.date %>
+            <br />
+            <%= event.time %>
+          </div>
 
-    <% when :time %>
-        <h2 title>When</h2>
-        <div>
-          <%= event.date %>
-          <br />
-          <%= event.time %>
-        </div>
+      <% when :location %>
+          <h2 title>Where</h2>
+          <div>
+            <%= event.location %>
+          </div>
 
-    <% when :location %>
-        <h2 title>Where</h2>
-        <div>
-          <%= event.location %>
-        </div>
+      <% when :admission %>
+          <h2 title>Admission</h2>
+          <div>
+            <%= event.fee %>
+          </div>
 
-    <% when :admission %>
-        <h2 title>Admission</h2>
-        <div>
-          <%= event.fee %>
-        </div>
-        
+      <% end %>
+
     <% end %>
-
   <% end %>
 
 </ul>
