@@ -1,37 +1,14 @@
-<div class="content container">
-  <div id="upcoming-event">
-    <%= image_tag("upcoming-event.jpg", :size => '980x635') %>
-  </div>
-  <div id="midbar">
-    <div id="hksa-logo-container">
-      <%= image_tag("hksa-logo.png") %>
+<div class="content">
+  <div id="owl-carousel" class="owl-carousel center">
+    <div>
+      <%= image_tag("upcoming-event.jpg", :size => '760x587') %>
     </div>
-    <div class="row">
-      <div class="col-md-2 col-md-offset-3 facebook-logo-container">
-      <!-- get from DB -->
-        <a href="http://www.facebook.com">
-          <%= image_tag("facebook-icon") %>
-        </a>
-      </div>
-      <div class="col-md-2 subscribe-container">
-        <a href=<%= url_for :controller => 'members', :action => 'new' %> >
-          <%= image_tag("subscribe-icon") %>
-        </a>
-      </div>
-      <div class="col-md-2 instagram-logo-container">
-      <!-- get from DB -->
-        <a href="http://www.instagram.com">
-          <%= image_tag("signup-icon") %>
-        </a>
-      </div>
+    <div>
+      <%= image_tag("upcoming-event.jpg", :size => '880x635') %>
+    </div>
+    <div>
+      <%= image_tag("upcoming-event.jpg", :size => '580x635') %>
     </div>
   </div>
-  <div id="sections">
-    <div class="section calendar-container">
-      <%= image_tag("calendar.jpg") %>
-    </div>
-    <div class="section sponsors">
-      
-    </div>
-  </div>
+  
 </div>

@@ -22,5 +22,6 @@ module Fall14
     
     config.assets.enabled = true
     config.assets.version = '1.0'
+    config.assets.paths << "#{Rails}/vendor/assets/fonts"
   end
 end

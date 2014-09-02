@@ -1,4 +1,4 @@
-<div class="navbar navbar-default navbar-blue">
+<div class="navbar navbar-blue ">
 	<div class="container">
 		<div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -12,7 +12,7 @@
 			</div>
           </div>
           <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-left">
               	<li>
 					<a href="<%= root_path %>">
 						HOME
@@ -35,42 +35,17 @@
 					</a>
 				</li>
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+            	<li>
+            		<a href="facebook.com">
+            			<%= image_tag('facebook_icon.jpg') %>
+            		</a>
+            	</li><li>
+            		<a href="instagram.com">
+            			<%= image_tag('instagram_icon.jpg') %>
+            		</a>
+            	</li>
+            </ul>
           </div>
-
-
-
-		<!--div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-		</div>
-        <div class="navbar-collapse collapse">
-			<ul class="nav navbar-nav">
-				<li>
-					<a href="<%= root_path %>">
-						HOME
-						<br />
-						主頁
-					</a>
-				</li>
-				<li>
-					<a href="<%= events_path %>">
-						EVENTS
-						<br />
-						活動
-					</a>
-				</li>
-				<li>
-					<a href="<%= about_path %>">
-						ABOUT
-						<br />
-						關於
-					</a>
-				</li>
-			</ul>
-		</div-->
 	</div>
 </div>
