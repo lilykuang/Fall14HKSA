@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140823220214) do
+ActiveRecord::Schema.define(version: 20140902003315) do
 
   create_table "event_pages", force: true do |t|
     t.integer  "pastEvent_id"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20140823220214) do
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
     t.string   "flyer"
+    t.boolean  "isCurrent"
   end
 
   create_table "front_pages", force: true do |t|

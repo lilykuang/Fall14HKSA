@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   #front_page 
   root 'front_pages#index'
-
-  resource :front_page, only: [:index]
+  resource  :front_page, only: [:index]
   resources :users
   resources :officers
   resources :events
+  resources :sponsors
   resources :sessions, only: [:new, :create, :destroy]
   resources :members
 

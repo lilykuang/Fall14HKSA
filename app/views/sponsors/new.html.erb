@@ -1,0 +1,16 @@
+<div>
+  <div>
+    <%= form_for(@sponsor) do |f| %>
+      <%= render 'shared/sponsor_error' %>
+      <p>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      </p>
+      <p>
+      <%= f.label :address %>
+      <%= f.text_field :address %>
+      </p>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>

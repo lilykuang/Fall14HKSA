@@ -2,12 +2,14 @@
   <div>
     <%= form_for(@member) do |f| %>
     <%= render 'shared/subscription_error' %>
+      <p>
       <%= f.label :name %>
       <%= f.text_field :name %>
-
+      </p>
+      <p>
       <%= f.label :email %>
       <%= f.text_field :email %>
-
+      </p>
       <%= f.submit "Subscribe us" %>
     <% end %>
   </div>

@@ -1,2 +1,7 @@
 <%= @user.name %>
-<%= link_to "Sign out", signout_path, method: "delete" %>
+<%= link_to "Sign out", signout_path, method: "delete" %></br>
+<% if current_user.admin? %>
+	<%= link_to "Add New Event",   new_event_path %></br>
+	<%= link_to "Add New Officer", new_officer_path %></br>
+	<%= link_to "Add New Sponsor", new_sponsor_path %>
+<% end %>
