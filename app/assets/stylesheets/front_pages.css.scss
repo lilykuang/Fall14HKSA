@@ -1,6 +1,61 @@
+$carousel-height: 539px;
+
 .content > .center img
 {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+#owl-carousel .row
+{
+	height: $carousel-height;
+}
+
+#owl-carousel .event-flyer > img
+{
+	width: 100%;
+}
+
+#owl-carousel .event-side
+{
+	max-height: $carousel-height;
+}
+
+#owl-carousel .carousel-image > div
+{
+	display: block;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#owl-carousel .carousel-image > img
+{
+	display: block;
+	height: 100%;
+}
+
+#owl-carousel .carousel-image
+{
+	height: $carousel-height;
+  	overflow: hidden; 
+}
+
+
+/* TODO : MAKE THIS STYLING DYNAMIC DEPENDING ON HOW MANY IMAGES WE'VE UPLOADED AND WHAT THE IMAGE NAME IS */
+#owl-carousel #carousel-image1
+{
+	background-image: url('carousel1.jpg');
+}
+
+#owl-carousel #carousel-image2
+{
+	background-image: url('carousel2.jpg');
+}
+
+#owl-carousel #carousel-image3
+{
+	background-image: url('carousel3.jpg');
 }

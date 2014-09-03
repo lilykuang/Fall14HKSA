@@ -15,3 +15,4 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap/bootstrap
+//= requre jquery.autoellipsis-1.0.10

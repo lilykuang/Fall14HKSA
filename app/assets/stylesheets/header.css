@@ -1,7 +1,10 @@
+
+
 .navbar-blue
 {
 	background-color: #0099A7;
 	border: none;
+	margin-bottom: 0;
 }
 
 .navbar-blue .navbar-nav > li > a
