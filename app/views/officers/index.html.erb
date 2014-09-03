@@ -1,0 +1,15 @@
+
+<% @officer.each do |officer| %>
+    <h3><%= officer.firstName %> <%= officer.lastName %></h3>    	
+    <li><%= officer.year %></li>
+    <li><%= officer.position %></li>
+    <li><%= officer.major %></li>
+    <li><%= officer.description %>
+    <% if current_user %>
+    <% if current_user.admin? %>
+       | <%= link_to "delete", officer, method: :delete,
+                                  data: { confirm: "You sure?" } %>
+    <% end %>
+    <% end %></li>
+    
+<% end %>

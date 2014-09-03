@@ -1,8 +1,10 @@
-<li><%= link_to 'Home', root_path %></li>
-<% if current_user.admin? && !current_user?(user) %>
-<h1>All Subscription</h1>
-	<% @members.each do |member| %>
-    	<li><%= member.name %></br>
-    	<%= member.email %></li>
+<% if current_user %>
+	<% if current_user.admin? %>
+	<h1>All Subscription</h1>
+		<% @members.each do |member| %>
+    		<li><%= member.name %> <%= member.email %> 
+    		| <%= link_to "delete", member, method: :delete, 
+    		data: { confirm: "You sure?" } %></li>
+		<% end %>
 	<% end %>
 <% end %>

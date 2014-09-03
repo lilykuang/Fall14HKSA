@@ -1,0 +1,30 @@
+<h1>Add Officer</h1>
+<%= form_for @officer do |f| %>
+  <p>
+    <%= f.label :firstName %><br/>
+    <%= f.text_field :firstName %>
+  </p>
+  <p>
+    <%= f.label :lastName %><br/>
+    <%= f.text_field :lastName %>
+  </p>
+  <p>
+    <%= f.label :year %><br/>
+    <%= f.text_field :year %>
+  </p>
+  <p>
+    <%= f.label :position %><br/>
+    <%= f.text_field :position %>
+  </p>
+  <p>
+    <%= f.label :major %><br/>
+    <%= f.text_field :major %>
+  </p>
+  <p>
+    <%= f.label :description %><br/>
+    <%= f.text_area :description, cols: 40, rows: 7 %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
